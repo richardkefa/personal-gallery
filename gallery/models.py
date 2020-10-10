@@ -26,4 +26,6 @@ class Image(models.Model):
   
   def save_image(self):
     self.save()
-  
+
+  class Meta:
+    odering = ['image']
