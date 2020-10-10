@@ -28,4 +28,4 @@ class Image(models.Model):
     self.save()
 
   class Meta:
-    odering = ['image']
+    ordering = ['image']
