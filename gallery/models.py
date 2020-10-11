@@ -22,10 +22,15 @@ class Image(models.Model):
   category = models.ForeignKey(Category,on_delete=models.CASCADE)
   
   def __str__(self):
-    return self.image
+    return self.image_name
   
   def save_image(self):
     self.save()
 
   class Meta:
     ordering = ['image']
+    
+  @classmethod
+  def all_images(cls):
+    images = cls.objects.all()
+    return images

@@ -4,7 +4,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-  url(r'^$',views.welcome,name='welcome'),
+  url(r'^$',views.all_photos,name='all_photos'),
 ]
 
 if settings.DEBUG:
