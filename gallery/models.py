@@ -13,6 +13,8 @@ class Category(models.Model):
   
   def __str__(self):
     return self.category
+  
+
 
 class Image(models.Model):
   image = models.ImageField(upload_to ='photo-album/')

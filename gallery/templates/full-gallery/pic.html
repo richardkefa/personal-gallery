@@ -1,4 +1,25 @@
 {%extends 'full-gallery/base.html'%}
 {% block content %}
-{{block.super}}
+<div class="container-fluid">
+  <div class="row" style="height: 100vh;">
+    <div class="col-md-6">
+      <img src="{{image.image.url}}" class="img-fluid" alt="">
+    </div>
+    <div class="col-md-6">
+      <h1 class="text-center">{{image.image_name}}</h1>
+      <div>
+        <h3>Description</h3><br>
+        <p>{{image.Image_description}}</p>
+      </div>
+      <div>
+        <h3>Category</h3>
+        <p>{{image.category}}</p>
+      </div>
+      <div>
+        <h3>Location</h3>
+        <p>{{image.location}}</p>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

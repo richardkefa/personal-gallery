@@ -1,0 +1,25 @@
+{%extends 'full-gallery/base.html'%}
+{% block content %}
+<div class="contsiner-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      {% if categories %}
+      <h3>Found {{categories|length}} of searched term {{message}}</h3>
+      {% else %}
+      <h3>your search did not match any result</h3>
+      {% endif %}
+    </div>
+  </div>
+  {% if categories %}
+  <div class="row" style="height: 100vh;">
+    {% for category in categories %}
+    <div class="col-md-12">
+      <h4>{{category.image_name}}</h4>
+      <a href="{% url 'single_photo' category.id %}"><img src="{{category.image.url}}" class="img-fluid" alt="image">
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
