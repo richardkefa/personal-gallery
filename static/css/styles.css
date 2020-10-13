@@ -1,0 +1,26 @@
+h1 {
+  color: white;
+}
+
+.navbar-brand{
+  margin-right: 50vw;
+}
+
+body{
+  background-image: url("https://bit.ly/3dkztbS");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  box-shadow: inset rgba(135, 7, 135,0.5) 0 3000px ;
+  color: white;
+}
+
+.navbar{
+  background-color: rgba(135, 7, 135,0.5);
+}
+
+a{
+  color: white;
+}
+
