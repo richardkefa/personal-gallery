@@ -14,7 +14,10 @@ class Category(models.Model):
   def __str__(self):
     return self.category
   
-
+  @classmethod
+  def search_by_catetegory(cls,search_term):
+    images = cls.objects.filter(category__icontains=search_term)
+    return images
 
 class Image(models.Model):
   image = models.ImageField(upload_to ='photo-album/')
