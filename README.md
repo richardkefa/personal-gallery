@@ -31,7 +31,5 @@ In case of any issue during collaboration please-
 ## BDD
 ### senario 1
 * GIVEN user runs the app
-* WHEN they create an account
-* AND login
-* AND They create new credential
-* THEN they can view a list of all saved credentials
+* WHEN they click on an image
+* THEN they can view a list of image detailes
