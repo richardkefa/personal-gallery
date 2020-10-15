@@ -33,3 +33,8 @@ In case of any issue during collaboration please-
 * GIVEN user runs the app
 * WHEN they click on an image
 * THEN they can view a list of image detailes
+
+### senario 2
+* Given ueser access the app
+* WHEN they search car,Wallpaper,pet
+* THEN they can view all the photos in the categories
