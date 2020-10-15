@@ -20,8 +20,8 @@ from decouple import config,Csv
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 MODE=config("MODE", default="dev")
-SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
+SECRET_KEY=config('SECRET_KEY')
+DEBUG=config('DEBUG', default=False, cast=bool)
 
 # Application definition
 
