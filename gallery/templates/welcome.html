@@ -52,7 +52,7 @@
     {% for image in images %}
       <div class="col-md-4">
         <div>
-        <a href="{% url 'single_photo' image.id %}"><img src="{{image.image.url}}" class="img-fluid" alt="image" height="150px">
+        <a href="{% url 'single_photo' image.id %}"><img src="{{image.image.url}}" class="img-fluid" alt="image" height="250px" width="300px">
         <h4 class="text-center">{{image.image_name}}</h4>
       </div>
     </div>
